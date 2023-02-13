@@ -1,6 +1,10 @@
 import time
 import ntptime
 
+# Collection of functions that returns the current time in Australian Eastern Daylight Time (AEDT)
+# while accounting for Daylight Savings Time.
+
+# If using an RTC not powered by an onboard battery, call ntpSyncTime first to update the RTC.
 
 AEST_OFFSET = 60 * 60 * 10
 SUMMERTIME_OFFSET = 60 * 60 * 1
